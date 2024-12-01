@@ -14,10 +14,10 @@ RUN npm install
 COPY . .
 
 # Setze die Umgebungsvariable für den Port (Cloud Run verwendet standardmäßig 8080)
-ENV PORT 8080
+ENV PORT 3000
 
 # Exponiere den Port
-EXPOSE 8080
+EXPOSE 3000
 
 # Startbefehl für die Anwendung
 CMD ["node", "server.js"]
